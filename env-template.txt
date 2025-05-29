@@ -1,0 +1,26 @@
+# Discord Bot Configuration
+DISCORD_TOKEN=your_discord_bot_token_here
+
+# Bot Command Prefix (dapat diubah sesuai keinginan)
+# Contoh: !, >, $, &, atau karakter lain
+PREFIX=>
+
+# Google Cloud Speech Configuration
+GOOGLE_APPLICATION_CREDENTIALS=path/to/your/google-cloud-credentials.json
+
+# Gemini AI Configuration
+GEMINI_API_KEY=your_gemini_api_key_here
+
+# Development Configuration
+NODE_ENV=development
+
+# === INSTRUKSI SETUP ===
+# 1. Copy file ini menjadi .env (hapus -template.txt)
+# 2. Isi semua credential yang diperlukan
+# 3. Ubah PREFIX sesuai keinginan Anda
+# 4. Simpan file dan jalankan bot dengan npm start
+
+# === NOTES ===
+# - PREFIX bisa karakter apapun: !, >, $, %, &, dll
+# - Jangan gunakan spasi dalam PREFIX
+# - File .env asli tidak boleh di-commit ke git (sudah ada di .gitignore) 
