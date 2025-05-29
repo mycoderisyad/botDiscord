@@ -1,17 +1,17 @@
-# 🤖 PoligotBot - Bot Discord Latihan Bahasa Multibahasa
+# PoligotBot - Bot Discord Latihan Bahasa Multibahasa
 
 Bot Discord untuk latihan bahasa dengan fitur percakapan real-time, terjemahan multibahasa, dan voice chat AI menggunakan **Gemini AI** dan **Google Cloud Speech**.
 
-## 🎯 Fitur Utama
+## Fitur Utama
 
-- **🌍 Translator Multibahasa** - Terjemahan akurat dengan Gemini AI ke 5 bahasa (ID, EN, JA, KO, ZH)
-- **💬 Percakapan Real-time** - Chat dengan AI yang memiliki memory per user
-- **📚 Mode Pembelajaran** - Feedback grammar dan vocabulary dengan analisis mendalam
-- **🎤 Voice Chat AI** - Percakapan suara real-time dengan AI menggunakan Google Cloud Speech
-- **🗣️ Text-to-Speech AI** - Konversi teks ke suara menggunakan Gemini AI (phonetic analysis)
-- **🌐 Pengaturan Bahasa** - Preferensi bahasa per user untuk pengalaman personal
+- **Translator Multibahasa** - Terjemahan akurat dengan Gemini AI ke 5 bahasa (ID, EN, JA, KO, ZH)
+- **Percakapan Real-time** - Chat dengan AI yang memiliki memory per user
+- **Mode Pembelajaran** - Feedback grammar dan vocabulary dengan analisis mendalam
+- **Voice Chat AI** - Percakapan suara real-time dengan AI menggunakan Google Cloud Speech
+- **Text-to-Speech AI** - Konversi teks ke suara menggunakan Gemini AI (phonetic analysis)
+- **Pengaturan Bahasa** - Preferensi bahasa per user untuk pengalaman personal
 
-## 🏗️ Arsitektur Sistem
+## Arsitektur Sistem
 
 ```
 [Discord User (Text/Voice Input)]
@@ -30,7 +30,7 @@ Bot Discord untuk latihan bahasa dengan fitur percakapan real-time, terjemahan m
 [Discord Response (Text/Audio/Embed)]
 ```
 
-## 📦 Teknologi yang Digunakan
+## Teknologi yang Digunakan
 
 | Komponen | Teknologi |
 |----------|-----------|
@@ -41,7 +41,7 @@ Bot Discord untuk latihan bahasa dengan fitur percakapan real-time, terjemahan m
 | Speech-to-Text | Google Cloud Speech-to-Text |
 | Voice Handling | @discordjs/voice, prism-media, ffmpeg |
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Prerequisites
 
@@ -88,7 +88,7 @@ GOOGLE_CLOUD_PROJECT_ID=your_google_cloud_project_id
 GOOGLE_CLOUD_KEY_FILE=./google-cloud-key.json
 ```
 
-**💡 Note:** Prefix bisa diubah sesuai keinginan di `.env`. Semua contoh command di bawah menggunakan `!` tapi sesuaikan dengan PREFIX yang Anda set.
+**Note:** Prefix bisa diubah sesuai keinginan di `.env`. Semua contoh command di bawah menggunakan `!` tapi sesuaikan dengan PREFIX yang Anda set.
 
 5. **Setup Google Cloud**
    - Buat project di Google Cloud Console
@@ -103,44 +103,44 @@ npm start
 npm run dev
 ```
 
-## 🎮 Commands
+## Commands
 
-### 💬 Percakapan Real-time
+### Percakapan Real-time
 - `!chat <pesan>` - Percakapan dengan AI (ada memory)
 - `!chat clear` - Hapus riwayat percakapan
 - `!chat history` - Lihat riwayat percakapan
 
-### 🌍 Translator Multibahasa
+### Translator Multibahasa
 - `!translate <teks>` - Terjemahan otomatis
 - `!translate <kode> <teks>` - Terjemahan ke bahasa tertentu
 - `!tr` - Alias untuk translate
 
-### 📚 Pembelajaran Bahasa
+### Pembelajaran Bahasa
 - `!belajar <teks>` - Feedback pembelajaran multibahasa
 - `!grammar <teks>` - Grammar check multibahasa
 - `!learn` - Alias untuk belajar
 
-### 🌐 Pengaturan Bahasa
+### Pengaturan Bahasa
 - `!language` - Lihat/ubah bahasa preferensi
 - `!language <kode>` - Set bahasa (id, en, ja, ko, zh)
 - `!lang` - Alias untuk language
 
-### 🎤 Voice Chat AI
+### Voice Chat AI
 - `!voicechat start` - Mulai percakapan suara dengan AI
 - `!voicechat stop` - Stop voice chat
 - `!voicechat status` - Status voice session
 - `!vc` - Alias untuk voicechat
 
-### 🎵 Voice & TTS
+### Voice & TTS
 - `!join` - Bot masuk voice channel
 - `!leave` - Bot keluar voice channel
 - `!tts <teks>` - Text-to-speech dengan Gemini AI
 
-### 🛠️ Utilitas
+### Utilitas
 - `!ping` - Cek status dan latency
 - `!help` - Panduan lengkap
 
-## 🌍 Bahasa yang Didukung
+## Bahasa yang Didukung
 
 | Kode | Bahasa | Flag | Google Cloud Code |
 |------|--------|------|-------------------|
@@ -150,7 +150,7 @@ npm run dev
 | `ko` | Korean | 🇰🇷 | `ko-KR` |
 | `zh` | Chinese | 🇨🇳 | `zh-CN` |
 
-## 💡 Contoh Penggunaan
+## Contoh Penggunaan
 
 ```bash
 # Ubah bahasa preferensi ke Jepang
@@ -175,7 +175,7 @@ npm run dev
 !tts ja こんにちは、今日はいい天気ですね
 ```
 
-## 🛠️ Development
+## Development
 
 ### Project Structure
 
@@ -265,46 +265,46 @@ module.exports = {
    - Download JSON key file
 4. Place the JSON file in project root as `google-cloud-key.json`
 
-## 🚀 Features
+## Features
 
-### 🎯 Smart Translation
+### Smart Translation
 - Auto-detect source language
 - Context-aware translation
 - Support for 5 major languages
 - Confidence scoring
 
-### 🧠 AI Learning Assistant
+### AI Learning Assistant
 - Grammar correction with explanations
 - Vocabulary suggestions
 - Alternative expressions
 - Natural conversation practice
 
-### 🎤 Voice Chat AI
+### Voice Chat AI
 - Real-time speech recognition
 - AI conversation with voice
 - Speech-to-text processing
 - Session management
 
-### 🗣️ Intelligent TTS
+### Intelligent TTS
 - Phonetic analysis with Gemini AI
 - Multi-language support
 - Context-aware speech generation
 - Audio simulation
 
-### 💾 Memory System
+### Memory System
 - Per-user chat history
 - Context retention
 - Conversation continuity
 - History management
 
-## 📈 Performance
+## Performance
 
 - **Response Time**: < 2 seconds for text commands
 - **Voice Latency**: < 3 seconds for voice processing
 - **Concurrent Users**: Supports multiple users simultaneously
 - **Memory Usage**: Optimized for long-running instances
 
-## 🤝 Contributing
+## Contributing
 
 1. Fork the project
 2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
@@ -312,17 +312,17 @@ module.exports = {
 4. Push to the branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
-## 📄 License
+## License
 
 This project is licensed under the ISC License.
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 - [Discord.js](https://discord.js.org/) - Discord API library
 - [Google Gemini AI](https://ai.google.dev/) - AI language model
 - [Google Cloud Speech](https://cloud.google.com/speech-to-text) - Speech services
 
-## 📞 Support
+## Support
 
 Jika Anda mengalami masalah atau memiliki pertanyaan:
 
@@ -332,4 +332,4 @@ Jika Anda mengalami masalah atau memiliki pertanyaan:
 
 ---
 
-**PoligotBot v3.0** - Powered by Gemini AI & Google Cloud Speech 🚀 
+**PoligotBot v3.0** - Powered by Gemini AI & Google Cloud Speech 
